@@ -1,0 +1,69 @@
+CREATE TABLE IF NOT EXISTS `data4maxtk` 
+(
+ `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `date` date ,
+ `heure` varchar(8) ,
+ `T1` varchar(8),
+ `T2` varchar(8),
+ `T3` varchar(8),
+ `T4` varchar(8),
+ `E1` varchar(2),
+ `E2` varchar(2),
+ `E3` varchar(2),
+ `E4` varchar(2),
+ `id_cuisson` varchar(4)
+ ) ENGINE=MyISAM
+
+
+CREATE TABLE IF NOT EXISTS `cuisson4maxtk` 
+(
+ `id_cuisson` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `date` date,
+ `nom` varchar(20) ,
+ `description` varchar(50),
+ `operateur` varchar(50) ,
+ `type` varchar(20),
+ `nb_tc` varchar(4), 
+ `numero` varchar(4), 
+ `date_deb` date,
+ `date_fin` date,
+ `heure_deb` time,
+ `heure_fin` time
+ ) ENGINE=MyISAM
+
+
+
+CREATE TABLE IF NOT EXISTS `eventsgaz` 
+(
+ `id_event` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `id_cuisson` varchar(10),
+ `id` varchar(10),
+ `date` date ,
+ `heure` varchar(8) ,
+ `templu` varchar(8),
+ `pression` varchar(30),
+ `ouverture` varchar(30),
+ `texte` varchar(50)
+ ) ENGINE=MyISAM
+
+
+CREATE TABLE IF NOT EXISTS `eventsbois` 
+(
+ `id_event` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `id_cuisson` varchar(10),
+ `id` varchar(10),
+ `date` date ,
+ `heure` varchar(8) ,
+ `T1` varchar(8),
+ `T2` varchar(8),
+ `T3` varchar(8),
+ `T4` varchar(8),
+ `registre` varchar(50),
+ `relais` varchar(50),
+ `alandierbas` varchar(50),
+ `alandierhaut` varchar(50),
+ `airprincipal` varchar(50),
+ `mouse` varchar(50),
+ `texte` varchar(300)
+ ) ENGINE=MyISAM
+
