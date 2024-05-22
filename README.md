@@ -1,3 +1,5 @@
+contact Yves Le Goasteller yves.malibu@hotmail.com
+
 This Arduino program collects temperature data from a pottery kiln using four thermocouples connected via MAX31856 amplifiers. It displays the collected temperatures on four separate LED displays. The program is designed to work with SPI communication for the thermocouples and handles fault detection and temperature reading for each sensor.
 Description of the Code
 
