@@ -1,6 +1,29 @@
 Full article on the production available here : http://yves-lg.com/index.php/outillage/pottery-kiln-thermometer 
 Contact yves.malibu@hotmail.com
 
+Optimize Your Pottery Firing: A Complete Guide to Making and Using a Datalogger with a Thermocouple
+
+In the field of pottery, precisely controlling the temperature during firing is crucial to achieve reproducible results and explore new glaze ranges. To achieve this level of control, using a datalogger that displays temperatures and records data for your pottery kiln is very useful. This article explains the making of this tool, from design to practical use, and the benefits it offers to potters.
+The datalogger box for pottery kiln has several objectives:
+
+    Track a firing and see its curve in real-time: Allows instant visualization of temperature variations and adjustments accordingly.
+    Analyze the results after firing: By comparing temperature curves with final results, it is possible to optimize firing processes.
+    Note events during firing: Record notes for future adjustments or identify specific issues.
+    Have a history of firing curves: For future reference and improving consistency of results.
+    Monitor firing in real-time: Ensure everything is going well and intervene in case of problems.
+
+Necessary Components
+
+    Arduino board: Base platform for connecting other components.
+    MAX31856 module: Interface for thermocouples.
+    Type S or K thermocouples: Temperature sensors.
+    LED or LCD display: To visualize data in real-time.
+    SD card (optional): To record data.
+    Waterproof case: To protect electronic components.
+    Additional Arduino modules (optional): To add features like barometric measurements.
+    Raspberry Pi: For data recording, web server, database server, and data processing with Python and PHP.
+
+
     Arduino Program:
         The Arduino program is designed to read temperature data from one or four thermocouples.
         It communicates this data to a Raspberry Pi using serial communication.
