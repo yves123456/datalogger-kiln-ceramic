@@ -1,4 +1,4 @@
-Full article on the production available here : http://yves-lg.com/index.php/thermometre-four
+Full article on the production available here : http://yves-lg.com/index.php/outillage/pottery-kiln-thermometer 
 Contact yves.malibu@hotmail.com
 
     Arduino Program:
